@@ -6,6 +6,7 @@ import { inspectAttr } from 'kimi-plugin-inspect-react'
 // https://vite.dev/config/
 export default defineConfig({
   base: '/', // Use absolute base for Vercel/static hosting
+  publicDir: 'public', // Ensure public assets are copied to dist
   plugins: [inspectAttr(), react()],
   resolve: {
     alias: {
